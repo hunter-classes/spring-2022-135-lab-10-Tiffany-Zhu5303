@@ -1,11 +1,8 @@
 * Spring 2022 - Lab 10
 
-* Last name:
-
-* First name:
-
-* GitHub username:
-
+* Last name: Zhu
+* First name: Tiffany
+* GitHub username: Tiffany-Zhu5303
 * Notes:
 
 
