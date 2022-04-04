@@ -13,7 +13,7 @@ int minutesSinceMidnight(Time time){
 };
 
 int minutesUntil(Time earlier, Time later){
-  int time;
+  int minutes = minutesSinceMidnight(later) - minutesSinceMidnight(earlier);
   
-  return time;
+  return minutes;
 }
