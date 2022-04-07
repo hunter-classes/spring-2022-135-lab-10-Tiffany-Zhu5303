@@ -15,5 +15,13 @@ int main(){
   std::cout << "Hours: " << later.h << "\nMinutes: " << later.m << std::endl;
   std::cout << "It took " << minutesUntil(now, later) << " minutes to get from the first to the second time" << std::endl;
 
+  std::cout << "\n--------------------Task B-------------------" << std::endl;
+
+  now = {8, 10};
+  int minutes = 75;
+  now = addMinutes(now, minutes);
+  
+  std::cout << "After " << now.m << " minutes, the time now is {" << now.h << ", " << now.m << "}" << std::endl;
+
   return 0;
 }

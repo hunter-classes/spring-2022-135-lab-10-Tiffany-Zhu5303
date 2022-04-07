@@ -17,3 +17,15 @@ int minutesUntil(Time earlier, Time later){
   
   return minutes;
 }
+
+Time addMinutes(Time time0, int min){
+  int minutes = minutesSinceMidnight(time0);
+  minutes += min;
+
+  int hours = minutes / 60;
+  time.h = hours;
+
+  hours = minutesSinceMidnight(hours);
+  time.m = minutes - hours;
+  
+}
