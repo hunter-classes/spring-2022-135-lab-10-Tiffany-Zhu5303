@@ -68,3 +68,30 @@ TimeSlot scheduleAfter(TimeSlot ts, Movie nextMovie){
 
   return nextOne;
 }
+
+bool timeOverLap(TimeSlot ts1, TimeSlot ts2){
+  Time end1 = addMinutes(ts1.startTime, ts1.movie.duration);
+  Time end2 = addMinutes(ts2.startTime, ts2.movie.duration);
+
+  if(ts1.startTime.h > ts2.startTime.h && ts1.startTime.h < end2.h){
+    return true;
+  }else if(ts1.startTime.h = ts2.startTime.h){
+    if(ts1.startTime.m > ts2.startTime.m && ts1.startTime.m < end2.m){
+      return true;
+    }else{
+      return false;
+    }
+  }else if(ts2.startTime.h > ts1.startTime.h && ts2.startTime.h < end1.h){
+    return true;
+  }else if(ts1.startTime.h = ts1.startTime.h){
+    if(ts2.startTime.m > ts1.startTime.m && ts2.startTime.m < end1.m){
+      return true;
+    }else{
+      return false;
+    }
+  }else{
+    return true;
+  }
+  
+}
+  

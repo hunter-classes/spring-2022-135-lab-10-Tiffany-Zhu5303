@@ -51,5 +51,12 @@ int main(){
   std::cout << getTimeSlot(lateMorning) << std::endl;
   std::cout << "\n" << getTimeSlot(beforeAfternoon) << std::endl;
 
+  std::cout << "\n--------------------Task E-------------------" << std::endl;
+  std::cout << "For " << morning.movie.title << " at " << morning.startTime.h << ":" << morning.startTime.m << " and " << lateMorning.movie.title << " at " << lateMorning.startTime.h << ":" << lateMorning.startTime.m << " : Do their timeslots overlap?\n(1 for yes and 0 for no)\n\n" << timeOverLap(morning, lateMorning) << std::endl;
+
+  std::cout << "\nFor " << morning.movie.title << " at " << morning.startTime.h << ":" << morning.startTime.m << " and " << night.movie.title << " at " << night.startTime.h << ":" << night.startTime.m << ": Do their timeslots overlap?\n(1 for yes and 0 for no)\n\n" << timeOverLap(morning, night) << std::endl;
+
+  return 0;
+
   return 0;
 }

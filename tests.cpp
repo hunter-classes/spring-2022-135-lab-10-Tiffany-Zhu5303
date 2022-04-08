@@ -58,3 +58,5 @@ TEST_CASE("Next time slot"){
   CHECK(second.startTime.h == 4);
   CHECK(second.startTime.m == 8);
 }
+
+
