@@ -19,10 +19,6 @@ int minutesUntil(Time earlier, Time later){
 }
 
 Time addMinutes(Time time0, int min){
-  /*Time *newTime;
-
-    newTime = new Time;*/
-
   //convert given time to minutes
   int minutes = minutesSinceMidnight(time0);
   minutes += min;
