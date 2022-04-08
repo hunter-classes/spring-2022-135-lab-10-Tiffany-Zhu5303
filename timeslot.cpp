@@ -22,7 +22,11 @@ std::string getTimeSlot(TimeSlot ts){
   std::cout << " ";
 
   std::string printTime = "[starts at ";
-  printTime += std::to_string(ts.startTime.h) + ":";
+  if(ts.startTime.h == 0){
+    printTime += "00";
+  }else{
+    printTime += std::to_string(ts.startTime.h) + ":";
+  }
 
   if(ts.startTime.m == 0){
     printTime += "00";

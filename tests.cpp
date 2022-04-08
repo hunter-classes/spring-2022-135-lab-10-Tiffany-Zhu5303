@@ -47,3 +47,14 @@ TEST_CASE("Movie time slot"){
   CHECK(getTimeSlot(afternoon) == "[starts at 12:00, ends by 14:22]");
   CHECK(getTimeSlot(night) == "[starts at 21:30, ends by 23:42]"); 
 }
+
+TEST_CASE("Next time slot"){
+  Movie movie1 = {"Spider-Man: No Way Home", ACTION, 150};
+  Movie movie2 = {"Hotel Transylvania: Transformania", COMEDY, 87};
+
+  TimeSlot first = {movie1, {1, 38}};
+  TimeSlot second = scheduleAfter(first, movie2);
+
+  CHECK(second.startTime.h == 4);
+  CHECK(second.startTime.m == 8);
+}
