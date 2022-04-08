@@ -18,10 +18,13 @@ int main(){
   std::cout << "\n--------------------Task B-------------------" << std::endl;
 
   now = {8, 10};
+  std::cout << "Start time: {" << now.h << ", " << now.m << "}" << std::endl;
+  
   int minutes = 75;
+  std::cout << "After " << minutes << " minutes" << std::endl;
   now = addMinutes(now, minutes);
   
-  std::cout << "After " << now.m << " minutes, the time now is {" << now.h << ", " << now.m << "}" << std::endl;
+  std::cout << "The time now is {" << now.h << ", " << now.m << "}" << std::endl;
 
   return 0;
 }
