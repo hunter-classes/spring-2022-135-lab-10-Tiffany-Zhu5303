@@ -59,4 +59,18 @@ TEST_CASE("Next time slot"){
   CHECK(second.startTime.m == 8);
 }
 
+TEST_CASE("Time slot overlap?"){
+  Movie movie1 = {"Uncharted", ACTION, 115};
+  Movie movie2 = {"Hotel Transylvania: Transformania", COMEDY, 87};
+
+  TimeSlot first = {movie1, {20, 10}};
+  TimeSlot second = {movie2, {19, 38}};
+
+  CHECK(timeOverLap(first, second) == 1);
+
+  first = {movie1, {19, 50}};
+  CHECK(timeOverLap(second, first));
+}
+
+  
 
