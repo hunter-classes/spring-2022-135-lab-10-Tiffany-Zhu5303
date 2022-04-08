@@ -37,11 +37,11 @@ int main(){
   TimeSlot evening = {movie4, {19, 15}};
   TimeSlot night = {movie1, {21, 37}};
 
-  std::cout << GetTimeSlot(morning) << std::endl;
-  std::cout << "\n" << GetTimeSlot(lateMorning) << std::endl;
-  std::cout << "\n" << GetTimeSlot(afternoon) << std::endl;
-  std::cout << "\n" << GetTimeSlot(evening) << std::endl;
-  std::cout << "\n" << GetTimeSlot(night) << std::endl;
+  std::cout << getTimeSlot(morning) << std::endl;
+  std::cout << "\n" << getTimeSlot(lateMorning) << std::endl;
+  std::cout << "\n" << getTimeSlot(afternoon) << std::endl;
+  std::cout << "\n" << getTimeSlot(evening) << std::endl;
+  std::cout << "\n" << getTimeSlot(night) << std::endl;
 
   return 0;
 }

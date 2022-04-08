@@ -35,3 +35,14 @@ TEST_CASE("Adding time"){
   CHECK(now.h == 19);
   CHECK(now.m == 5);
 }
+
+TEST_CASE("Movie time slot"){
+  Movie movie1 = {"The Secrets of Dumbledore", DRAMA, 142};
+  Movie movie2 = {"Everything Everywhere All At Once", ACTION, 132};
+
+  TimeSlot afternoon = {movie1, {12, 0}};
+  TimeSlot night = {movie2, {21, 30}};
+
+  CHECK(getTimeSlot(afternoon) == "[starts at 12:00, ends by 14:22]");
+  CHECK(getTimeSlot(night) == "[starts at 21:30, ends by 23:42]"); 
+}

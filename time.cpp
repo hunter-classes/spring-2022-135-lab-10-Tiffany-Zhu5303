@@ -46,7 +46,7 @@ void printMovie(Movie mv){
   std::cout << mv.title << " " << g << " (" << mv.duration << " min)";
 }
 
-std::string GetTimeSlot(TimeSlot ts){
+std::string getTimeSlot(TimeSlot ts){
   printMovie(ts.movie);
   std::cout << " ";
 
