@@ -1,6 +1,8 @@
 #include <iostream>
 
 #include "time.h"
+#include "timeslot.h"
+#include "movie.h"
 
 int main(){
   Time now = {10, 18};

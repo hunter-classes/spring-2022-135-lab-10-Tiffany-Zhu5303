@@ -1,6 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include "time.h"
+#include "timeslot.h"
 
 TEST_CASE("Minutes since midnight"){
   Time now = {8, 51};
