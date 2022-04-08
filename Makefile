@@ -13,4 +13,4 @@ main.o: main.cpp time.h
 tests.o: tests.cpp doctest.h time.h
 
 clean:
-	rm -f main main.o tests.o $(OBJECTS)
+	rm -f main tests main.o tests.o $(OBJECTS)

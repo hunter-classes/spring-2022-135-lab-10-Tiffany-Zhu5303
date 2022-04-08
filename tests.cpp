@@ -21,3 +21,17 @@ TEST_CASE("Time between intervals"){
   
   CHECK(minutesUntil(now, later) == 171);
 }
+
+TEST_CASE("Adding time"){
+  Time now = {17, 9};
+  int minutes = 59;
+  now = addMinutes(now, minutes);
+
+  CHECK(now.h == 18);
+  CHECK(now.m == 8);
+
+  now = addMinutes(now, 57);
+
+  CHECK(now.h == 19);
+  CHECK(now.m == 5);
+}
