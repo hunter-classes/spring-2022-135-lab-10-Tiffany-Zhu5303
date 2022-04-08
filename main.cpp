@@ -45,5 +45,11 @@ int main(){
   std::cout << "\n" << getTimeSlot(evening) << std::endl;
   std::cout << "\n" << getTimeSlot(night) << std::endl;
 
+  std::cout << "\n--------------------Task D-------------------" << std::endl;
+  TimeSlot beforeAfternoon = scheduleAfter(lateMorning, movie4);
+
+  std::cout << getTimeSlot(lateMorning) << std::endl;
+  std::cout << "\n" << getTimeSlot(beforeAfternoon) << std::endl;
+
   return 0;
 }

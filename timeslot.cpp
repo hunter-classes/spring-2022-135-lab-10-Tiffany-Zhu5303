@@ -50,3 +50,17 @@ std::string getTimeSlot(TimeSlot ts){
 
   return printTime;
 }
+
+TimeSlot scheduleAfter(TimeSlot ts, Movie nextMovie){
+  Time ending = ts.startTime;
+  int minutes = minutesSinceMidnight(ending);
+
+  minutes += ts.movie.duration;
+  ending = {0, 0};
+  
+  ending = addMinutes(ending, minutes);
+  
+  TimeSlot nextOne = {nextMovie, ending};
+
+  return nextOne;
+}
