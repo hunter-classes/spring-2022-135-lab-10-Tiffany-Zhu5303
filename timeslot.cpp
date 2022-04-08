@@ -77,9 +77,7 @@ bool timeOverLap(TimeSlot ts1, TimeSlot ts2){
     return true;
   }else if(ts1.startTime.h = ts2.startTime.h){
     return true;
-  }else if(ts1.startTime.h < ts2.startTime.h && end1.h > ts2.startTime.h && end1.h < end2.h){
-    return true;
-  }else if(ts2.startTime.h > ts1.startTime.h && ts2.startTime.h <= end1.h){
+  }else if(ts1.startTime.h < ts2.startTime.h && end1.h > ts2.startTime.h){
     return true;
   }else{
     return false;
